@@ -30,7 +30,7 @@ You can find your key file at `/Users/garima-fueled/.gnupg/secring.gpg`. Make su
 
 ### Scripts
  - Add the `gradle-mvn-push.gradle` and `version.gradle` gradle scripts to your project from [here](https://github.com/Fueled/garage-android/tree/master/extra/gradle). (Add it to the `extra/gradle/` directory. 
- - Also add the deploy script `deploy_library.sh` from [here] (https://github.com/Fueled/garage-android/tree/master/scripts/). (Add it to the `scripts/` directory.
+ - Also add the deploy script `deploy_library.sh` from [here](https://github.com/Fueled/garage-android/tree/master/scripts/). (Add it to the `scripts/` directory.
 
 ### Project `build.gradle` configuration : 
 
