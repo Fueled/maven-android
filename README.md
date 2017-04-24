@@ -17,6 +17,16 @@ In order to prove that the artifacts are uploaded by you, you need to sign them 
 6. Click on Generate Key.
 7. After your key is generated, you will be able to see it in the keychain :
 8. Copy the **Key Id** from here. We will need it later.
+9. Publish your keys :
+	- Search for your keys using the following command:
+	```
+	$ gpg --keyserver hkp://pgp.mit.edu --search-keys johndoe@example.com # Use your email
+	```
+	- If your `keyid` is not in the list, publish it using the following commands (`YYYYYYYY` is your `keyId`:
+	```
+	$ gpg --keyserver hkp://keyserver.ubuntu.com --send-keys YYYYYYYY
+	$ gpg --keyserver hkp://pgp.mit.edu --send-keys YYYYYYYY
+	```
 
 ### Signing Information in `gradle.properties`
 Create a `gradle.properties` file inside the library module of your project (Multiple files if you have multiple modules). Set the following information obtained in the previous step :
